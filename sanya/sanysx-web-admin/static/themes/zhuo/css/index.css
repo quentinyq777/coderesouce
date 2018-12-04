@@ -1,0 +1,182 @@
+.restaurantM{
+	width: 1300px;
+	height: 910px;
+}
+.restMcon{
+	width: 1300px;
+	height: 910px;
+	background-color: #3697E8;
+	background-image: url(/themes/zhuoimages/index_bgs.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+}
+.restMainMenu{
+	height: 83px;
+	padding: 7px 0 0 72px;
+}
+.restMainMenu dl{
+	margin-right: 65px;
+}
+.restMainMenu dt{
+	width: 45px;
+	height: 45px;
+	background-image: url(/themes/zhuoimages/menu_111.png);
+}
+.restMainMenu dt.sec{
+	background-image: url(/themes/zhuoimages/menu_222.png);
+}
+.restMainMenu dt.thr{
+	background-image: url(/themes/zhuoimages/menu_333.png);
+}
+.restMainMenu dd{
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size: 16px;
+	color: #fff;
+}
+.restMainMenu dd:hover{
+	color: #055680;
+}
+.restMainMenu dd.selected{
+	color: #055680;
+}
+.restMainIn{
+	width: 1280px;
+}
+.restMainTab{
+	height: 36px;
+	padding-top: 10px;
+}
+.restMainTab ul{
+	padding-left: 38px;
+}
+.restMainTab li{
+	margin-right: 10px;
+	width: 104px;
+	height: 36px;
+	color: #010101;
+	font-size: 14px;
+	background-image: url(/themes/zhuoimages/li_btns.png);
+	line-height: 36px;
+	text-align: center;
+}
+.restMainTab li.current{
+	background-image: url(/themes/zhuoimages/all_btns.png);
+}
+.restOneList{
+	margin: 14px 8px 0;		
+	position: relative;
+	width: 240px;
+	height: 176px;
+	cursor: pointer;
+}
+.restOneList .listBg{
+	width: 236px;
+	height: 172px;
+	border-radius: 8px;
+	background-color: #fff;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	border:2px solid #fff;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.restMainOne>div.selected .listBg{
+	border-color:#000;
+}
+.restOneList:hover .listBg{
+	border-color:#000;
+}
+.restOneList dl,.restOneList ul{
+	position: absolute;
+}
+.restOneList ul{
+	top:16px;
+	right: 18px;
+}
+.restOneList ul li{
+	border-radius:5px;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fffefe;
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+.restOneList ul li.disabled{
+	background-color: #B7B7B7;
+}
+.restOneList ul li.freeBg{
+	background-color: #63971B;
+}
+.restOneList ul li.freeBgH{
+	background-color: #8AB24F;
+}
+.restOneList ul li.orderBg{
+	background-color: #D81C1A;
+}
+.restOneList ul li.orderBgH{
+	background-color: #DE5A58;
+}
+.restOneList ul li.menuBg{
+	background-color: #275497;
+}
+.restOneList ul li.menuBgH{
+	background-color: #4A83DA;
+}
+.restOneList ul li.accountBg{
+	background-color: #F6A800;
+}
+.restOneList ul li.accountBgH{
+	background-color: #EABD58;
+}
+.restOneList dl{
+	left:18px;
+	top:32px;
+	width: 90px;
+	text-align: center;
+	color: #000;
+	font-size: 16px;
+}
+.restOneList dt{
+	width: 90px;
+	height: 92px;
+	margin-bottom: 10px;
+}
+
+
+/* 寮瑰嚭灞� */
+.restTipBox{
+	width: 230px;
+	height: 250px;
+	position: absolute;	
+	border-radius: 8px;
+	bottom: 340px;
+	right: 535px;
+}
+.restTipBox .tipBoxBg{
+	width: 230px;
+	height: 250px;
+	background-color: #fff;
+	opacity:0.95;
+	filter:alpha(opacity=95);	
+	border-radius: 8px;
+}
+.restTipBox ul{
+	position: absolute;
+	color: #000;
+	top:0;
+	left: 0;
+	font-size: 18px;
+	padding:40px 0 0 30px;
+}
+.restTipBox ul li{
+	height: 34px;
+	line-height: 34px;
+}
+.restTipBox .sColor{
+	color: #FF0200;
+}

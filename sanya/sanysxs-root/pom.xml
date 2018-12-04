@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sanysx</groupId>
+  <artifactId>sanysxs-root</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>sanysxs-root</name>
+  <description>sanysxs-root</description>
+  <parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>2.0.4.RELEASE</version>
+	<relativePath /> <!-- lookup parent from repository -->
+  </parent>
+  <modules>
+  	<module>sanysxs-bussiness-hrpro</module>
+  	<module>sanysxs-bussiness-security</module>
+  	<module>sanysxs-bussiness-sixs</module>
+  	<module>sanysxs-bussiness-logistics</module>
+  	<module>sanysxs-base-user</module>
+  	<module>sanysxs-base-authority</module>
+  	<module>sanysxs-base-message</module>
+  	<module>sanysxs-base-basicdata</module>
+  	<module>sanysxs-report-safepruduce</module>
+  	<module>sanysxs-report-sixs</module>
+  	<module>sanysxs-report-process</module>
+  	<module>sanysxs-report-experson</module>
+  	<module>sanysxs-report-prorate</module>
+  	<module>sanysxs-report-workdis</module>
+  	<module>sanysxs-report-meterial</module>
+  </modules>
+</project>

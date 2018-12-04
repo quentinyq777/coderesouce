@@ -1,0 +1,12 @@
+img {	cursor: pointer; }
+
+
+.iconImg {
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+
+.ext-icon-zoom {	background: url('icons/search.png') no-repeat ; }
+

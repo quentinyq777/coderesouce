@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>测试demo</title>
+<script type="text/javascript" src="../static/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../static/js/common.js"></script>
+</head>
+<body>
+    <a id="cid1" href="javascript:void(0)" style="width:80px" onclick="setCokie()">setCokie</a><br />
+    <a id="cid2" href="javascript:void(0)" style="width:80px" onclick="getCokie()">getHeader</a><br />
+    <a id="cid3" href="javascript:void(0)" style="width:80px" onclick="delCokie()">delHeader</a><br />
+    
+	<a id="id1" href="javascript:void(0)" style="width:80px" onclick="findbyid()">访问hr依据id查询测试</a><br />
+	<a id="id2" href="javascript:void(0)" style="width:80px" onclick="jsonsubmit()">访问hr提交json对象测试</a> <br />
+	<a id="id2" href="javascript:void(0)" style="width:80px" onclick="findbyiduser()">访问user依据id测试</a> <br />
+	<a id="id3" href="javascript:void(0)" style="width:80px" onclick="feignfindbyid()">访问user通过feign依据id查询测试</a> <br />
+	<a id="id3" href="javascript:void(0)" style="width:80px" onclick="feignjsonsubmit()">访问user通过feign提交json对象测试</a> <br />
+    
+	<script type="text/javascript">
+	    function setCokie() {
+	    	var timestamp = (new Date()).valueOf();
+	    	setCookie(timestamp);
+	    }    
+	    
+	    function getCokie() {
+	    	alert(getHeader());
+	    }
+	    
+	    function delCokie() {
+	    	delCookie();
+	    }
+	
+	
+	    function findbyid() {
+	    	$.ajax({
+			    url:getRootPath()+'sanysxs-bussiness-hrpro/demo/demoHrFindById/0c0b1ca9dabb4e54a64285fc6af300a0',
+			    type:'get',    
+			    dataType:'json',
+			    headers: {'token': getHeader()},
+			    success:function(data) { 
+			    	alert(data.code);
+			    	//var cookievar = $.cookie('token');
+			    	//$.cookie('token', cookievar, { expires: 7, path: '/' });
+			    },    
+			    error : function(data) {
+			    	if (data.responseJSON.errorcode == 400) {
+			    		alert("您还没登录，请您进行登录");
+			    	}
+			    }    
+			}); 
+	    }
+	    
+	    function findbyiduser() {
+	    	$.ajax({
+			    url:getRootPath()+'sanysxs-base-user/demo/demoFindById/0c0b1ca9dabb4e54a64285fc6af300a0',
+			    type:'get',    
+			    dataType:'json',
+			    headers: {'token': getHeader()},
+			    success:function(data) { 
+			    	alert(data.code+data.msg);
+			    },    
+			    error : function(data) {
+			    	if (data.responseJSON.errorcode == 400) {
+			    		alert("您还没登录，请您进行登录");
+			    	}
+			    }    
+			}); 
+	    }
+	    
+		var paramJson = {
+				id:"00000a51555c4666967123ff4784bb8b",
+				tel1:"tel1no1111"
+	    };
+		
+		function jsonsubmit() {
+			$.ajax({
+	            type: "POST",
+	            url: getRootPath()+"sanysxs-bussiness-hrpro/demo/updatehr",
+	            dataType: "json",
+	            contentType: "application/json",
+	            headers: {'token': getHeader()},
+	            data: JSON.stringify(paramJson),
+	            success: function (data) {
+	                alert(data.code);
+	            },    
+			    error : function(data) {
+			    	if (data.responseJSON.errorcode == 400) {
+			    		alert("您还没登录，请您进行登录");
+			    	}
+			    }  
+	        })
+		}
+		
+		
+		function feignfindbyid() {
+	    	$.ajax({
+			    url:getRootPath()+'sanysxs-base-user/demofeign/demoFeignFindById/0c0b1ca9dabb4e54a64285fc6af300a0',
+			    type:'get',    
+			    dataType:'json',
+			    headers: {'token': getHeader()},
+			    success:function(data) { 
+			    	alert(data.code+data.msg);
+			    },    
+			    error : function(data) {
+			    	if (data.responseJSON.errorcode == 400) {
+			    		alert("您还没登录，请您进行登录");
+			    	}
+			    }    
+			}); 
+	    }
+		
+		function feignjsonsubmit() {
+			$.ajax({
+	            type: "POST",
+	            url: getRootPath()+"sanysxs-base-user/demofeign/update",
+	            dataType: "json",
+	            contentType: "application/json",
+	            headers: {'token': getHeader()},
+	            data: JSON.stringify(paramJson),
+	            success: function (data) {
+	                alert(data.code);
+	            },    
+			    error : function(data) {
+			    	if (data.responseJSON.errorcode == 400) {
+			    		alert("您还没登录，请您进行登录");
+			    	}
+			    }  
+	        })
+		}
+	</script>
+</body>
+</html>
