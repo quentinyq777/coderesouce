@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+html { background: none repeat scroll 0 0 #FFFFFF; color: #333;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, form, th, td { margin: 0; padding: 0;}
+body, button, input, select, textarea { font: 12px/1.5 Tahoma,Arial,"宋体",sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+legend { color: #000000;}
+fieldset, img {border: 0 none;}
+button, input, select, textarea { font-size: 100%;}
+hr {border:0;height:1px;*color:#fff}
+address, cite, dfn, em, var { font-style: normal;}
+small { font-size: 12px;}
+.fl-clear{clear:both;}
+.fl-clr{zoom:1;}
+.fl-clr:after{display:block;clear:both;height:0;content:"\0020";}
+table { border-collapse:collapse; border-spacing: 0;}
+ul, ol { list-style: none outside none;}
+a {text-decoration: none; color:#474747;cursor:pointer;}
+a:hover { color:#0b8dd3; text-decoration: none;}
+
+
+.header{ width:100%; background:#fff; height:59px;}
+.head{ width:1000px; margin:0 auto; clear:both;}
+.head .title{ float:left; line-height:59px; font-size:24px; font-family:"微软雅黑"; color:#505151;}
+.head ul{ float:right; margin-top:20px; padding-right:47px;}
+.head ul li{ float:left; margin-left:12px;}
+.head ul li a{ color:#474747; margin-right:12px;}
+.head ul li a:hover{color:#0b8dd3; text-decoration:underline;}
+
+.content{ width:100%; height:551px; background:url(../images/main_bg.jpg) left top repeat-x;}
+.btm_bg{ width:100%; height:551px; margin-left:auto; margin-right:auto; clear:both; background:url(../images/main_bg1.jpg) left top no-repeat;}
+.maincontent{ width:1000px; margin:0 auto; clear:both;}
+.maincontent .left_img{ padding:69px 0 0 87px; width:375px; float:left;}
+.right_login{ width:293px; height:413px; background:url(../images/login_bg.png) left top no-repeat; float:right; margin-top:61px;}
+h3{ width:279px; height:47px; margin:7px auto 0 auto; clear:both; line-height:47px; text-align:center; color:#333; font-family:"微软雅黑"; font-size:22px;}
+.form{ margin:36px 0 0 37px;}
+.form p{ margin-bottom:16px; }
+.form .txt1{ width:171px; height:40px; line-height:40px; vertical-align:middle; border:solid 1px #c3c3c3; padding:0;font-size:14px; color:#b7b7b7; padding-left:46px; background:url(../images/icon.png) 14px 10px no-repeat; outline:none;}
+.form .txt2{ background-position:14px -35px;}
+.form p label{ font-size:12px; color:#7a7a7a;  float:left;}
+.form p .txt3{width:161px; height:18px; border:solid 1px #bababa; float:left; margin-left:7px; outline:none;}
+.form p span{ float:left; margin-right:6px;}
+.form p a{ color:#538eb0;}
+.form p a:hover{ text-decoration:underline;}
+
+.btn{ width:219px; height:50px; margin:32px auto 0 auto;*margin-top:16px; clear:both;}
+.btn a{width:219px; height:50px; display:block; background:#0c7cc8; border-radius:2px; color:#fff; font-size:18px; font-family:"微软雅黑"; line-height:50px; text-align:center;}
+.btn a:hover{ color:#fff;}
+
+.footer{ width:100%; height:90px; background:#e8e8e8;}
+.footer ul{ width:480px; margin:0 auto; clear:both;}
+.footer ul li{ float:left; margin-top:35px; margin-left:7px;}
+.footer ul li a{ margin-right:8px;}
+.footer ul li a:hover{ text-decoration:underline;}

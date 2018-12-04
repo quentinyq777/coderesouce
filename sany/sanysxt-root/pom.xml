@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sanysx</groupId>
+  <artifactId>sanysxt-root</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>sanysxt-root</name>
+  <description>sanysxt-root</description>
+  <parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.4.RELEASE</version>
+  </parent>
+  
+  <modules>
+  	<module>sanysxt-eureka</module>
+  	<module>sanysxt-zuul</module>
+  </modules>
+  
+  <repositories>
+	  <repository>
+		  <id>aliyunRepository</id>
+		  <name>aliyunRepository</name>
+		  <url>http://localhost:8081/repository/maven-public/</url>
+	  </repository>
+   </repositories>
+   <!-- <repositories>
+	  <repository>
+		  <id>nexus-aliyun</id>
+		  <name>Nexus aliyun</name>
+		  <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+	  </repository>
+   </repositories> -->
+   <!-- <pluginRepositories>
+		<pluginRepository>
+			<id>releases</id>
+			<url>http://repo.spring.io/snapshot</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>snapshots</id>
+			<url>http://repo.spring.io/milestone</url>
+		</pluginRepository>
+	</pluginRepositories> -->
+   
+   
+</project>

@@ -1,0 +1,99 @@
+Manifest-Version: 1.0
+Implementation-Title: sanysxt-zuul
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: yuq25
+Implementation-Vendor-Id: com.sanysx
+Class-Path: lib/spring-cloud-starter-netflix-zuul-2.0.1.RELEASE.jar li
+ b/spring-cloud-netflix-zuul-2.0.1.RELEASE.jar lib/netflix-commons-uti
+ l-0.3.0.jar lib/javax.inject-1.jar lib/spring-cloud-starter-2.0.1.REL
+ EASE.jar lib/spring-cloud-context-2.0.1.RELEASE.jar lib/spring-securi
+ ty-crypto-5.0.7.RELEASE.jar lib/spring-cloud-commons-2.0.1.RELEASE.ja
+ r lib/spring-security-rsa-1.0.5.RELEASE.jar lib/bcpkix-jdk15on-1.56.j
+ ar lib/bcprov-jdk15on-1.56.jar lib/spring-boot-starter-actuator-2.0.4
+ .RELEASE.jar lib/spring-boot-actuator-autoconfigure-2.0.4.RELEASE.jar
+  lib/spring-boot-actuator-2.0.4.RELEASE.jar lib/micrometer-core-1.0.6
+ .jar lib/HdrHistogram-2.1.10.jar lib/LatencyUtils-2.0.3.jar lib/sprin
+ g-cloud-starter-netflix-hystrix-2.0.1.RELEASE.jar lib/spring-cloud-ne
+ tflix-ribbon-2.0.1.RELEASE.jar lib/hystrix-core-1.5.12.jar lib/hystri
+ x-serialization-1.5.12.jar lib/jackson-module-afterburner-2.9.6.jar l
+ ib/hystrix-metrics-event-stream-1.5.12.jar lib/hystrix-javanica-1.5.1
+ 2.jar lib/asm-5.0.4.jar lib/aspectjweaver-1.8.13.jar lib/rxjava-react
+ ive-streams-1.2.1.jar lib/reactive-streams-1.0.2.jar lib/spring-cloud
+ -starter-netflix-ribbon-2.0.1.RELEASE.jar lib/ribbon-2.2.5.jar lib/ri
+ bbon-transport-2.2.5.jar lib/rxnetty-contexts-0.4.9.jar lib/rxnetty-s
+ ervo-0.4.9.jar lib/rxnetty-0.4.9.jar lib/netty-codec-http-4.1.27.Fina
+ l.jar lib/netty-codec-4.1.27.Final.jar lib/netty-transport-native-epo
+ ll-4.1.27.Final.jar lib/netty-common-4.1.27.Final.jar lib/netty-buffe
+ r-4.1.27.Final.jar lib/netty-transport-native-unix-common-4.1.27.Fina
+ l.jar lib/netty-transport-4.1.27.Final.jar lib/netty-resolver-4.1.27.
+ Final.jar lib/ribbon-core-2.2.5.jar lib/commons-lang-2.6.jar lib/ribb
+ on-httpclient-2.2.5.jar lib/ribbon-loadbalancer-2.2.5.jar lib/netflix
+ -statistics-0.1.1.jar lib/rxjava-1.3.8.jar lib/spring-cloud-starter-n
+ etflix-archaius-2.0.1.RELEASE.jar lib/spring-cloud-netflix-archaius-2
+ .0.1.RELEASE.jar lib/archaius-core-0.7.6.jar lib/jsr305-3.0.1.jar lib
+ /commons-configuration-1.8.jar lib/zuul-core-1.3.1.jar lib/servo-core
+ -0.12.21.jar lib/spring-cloud-starter-netflix-eureka-client-2.0.1.REL
+ EASE.jar lib/spring-cloud-netflix-core-2.0.1.RELEASE.jar lib/spring-b
+ oot-autoconfigure-2.0.4.RELEASE.jar lib/spring-boot-starter-aop-2.0.4
+ .RELEASE.jar lib/spring-cloud-netflix-eureka-client-2.0.1.RELEASE.jar
+  lib/eureka-client-1.9.3.jar lib/jettison-1.3.7.jar lib/stax-api-1.0.
+ 1.jar lib/netflix-eventbus-0.3.0.jar lib/netflix-infix-0.3.0.jar lib/
+ commons-jxpath-1.3.jar lib/joda-time-2.9.9.jar lib/antlr-runtime-3.4.
+ jar lib/stringtemplate-3.2.1.jar lib/antlr-2.7.7.jar lib/gson-2.8.5.j
+ ar lib/commons-math-2.2.jar lib/jsr311-api-1.1.1.jar lib/jersey-core-
+ 1.19.1.jar lib/jersey-client-1.19.1.jar lib/jersey-apache-client4-1.1
+ 9.1.jar lib/guice-4.1.0.jar lib/aopalliance-1.0.jar lib/compactmap-1.
+ 2.1.jar lib/dexx-collections-0.2.jar lib/jackson-annotations-2.9.0.ja
+ r lib/eureka-core-1.9.3.jar lib/woodstox-core-asl-4.4.1.jar lib/stax-
+ api-1.0-2.jar lib/ribbon-eureka-2.2.5.jar lib/xstream-1.4.10.jar lib/
+ xmlpull-1.1.3.1.jar lib/xpp3_min-1.1.4c.jar lib/spring-boot-starter-w
+ eb-2.0.4.RELEASE.jar lib/spring-boot-starter-2.0.4.RELEASE.jar lib/sp
+ ring-boot-2.0.4.RELEASE.jar lib/spring-boot-starter-logging-2.0.4.REL
+ EASE.jar lib/log4j-to-slf4j-2.10.0.jar lib/log4j-api-2.10.0.jar lib/j
+ avax.annotation-api-1.3.2.jar lib/spring-boot-starter-json-2.0.4.RELE
+ ASE.jar lib/jackson-datatype-jdk8-2.9.6.jar lib/jackson-datatype-jsr3
+ 10-2.9.6.jar lib/jackson-module-parameter-names-2.9.6.jar lib/spring-
+ boot-starter-tomcat-2.0.4.RELEASE.jar lib/tomcat-embed-core-8.5.32.ja
+ r lib/tomcat-embed-el-8.5.32.jar lib/tomcat-embed-websocket-8.5.32.ja
+ r lib/hibernate-validator-6.0.11.Final.jar lib/validation-api-2.0.1.F
+ inal.jar lib/jboss-logging-3.3.2.Final.jar lib/spring-web-5.0.8.RELEA
+ SE.jar lib/spring-beans-5.0.8.RELEASE.jar lib/spring-webmvc-5.0.8.REL
+ EASE.jar lib/spring-aop-5.0.8.RELEASE.jar lib/spring-context-5.0.8.RE
+ LEASE.jar lib/spring-expression-5.0.8.RELEASE.jar lib/junit-4.12.jar 
+ lib/byte-buddy-1.7.11.jar lib/objenesis-2.6.jar lib/hamcrest-core-1.3
+ .jar lib/spring-core-5.0.8.RELEASE.jar lib/spring-jcl-5.0.8.RELEASE.j
+ ar lib/spring-test-5.0.8.RELEASE.jar lib/springfox-swagger2-2.9.2.jar
+  lib/swagger-annotations-1.5.20.jar lib/swagger-models-1.5.20.jar lib
+ /springfox-spi-2.9.2.jar lib/springfox-core-2.9.2.jar lib/springfox-s
+ chema-2.9.2.jar lib/springfox-swagger-common-2.9.2.jar lib/springfox-
+ spring-web-2.9.2.jar lib/guava-20.0.jar lib/classmate-1.3.4.jar lib/s
+ lf4j-api-1.7.25.jar lib/spring-plugin-core-1.2.0.RELEASE.jar lib/spri
+ ng-plugin-metadata-1.2.0.RELEASE.jar lib/mapstruct-1.2.0.Final.jar li
+ b/springfox-swagger-ui-2.9.2.jar lib/sanysmart-common-0.0.1-SNAPSHOT.
+ jar lib/commons-lang3-3.7.jar lib/commons-io-2.6.jar lib/commons-code
+ c-1.11.jar lib/commons-fileupload-1.3.3.jar lib/commons-beanutils-1.9
+ .3.jar lib/commons-logging-1.2.jar lib/commons-collections-3.2.2.jar 
+ lib/fst-2.56.jar lib/javassist-3.21.0-GA.jar lib/json-20180130.jar li
+ b/jackson-core-2.9.6.jar lib/jackson-databind-2.9.6.jar lib/jackson-d
+ ataformat-xml-2.9.6.jar lib/jackson-module-jaxb-annotations-2.9.6.jar
+  lib/stax2-api-3.1.4.jar lib/woodstox-core-5.0.3.jar lib/dom4j-1.6.1.
+ jar lib/xml-apis-1.4.01.jar lib/jaxen-1.1.6.jar lib/snakeyaml-1.19.ja
+ r lib/dozer-5.5.1.jar lib/poi-3.14.jar lib/poi-ooxml-3.14.jar lib/cur
+ vesapi-1.03.jar lib/poi-ooxml-schemas-3.14.jar lib/xmlbeans-2.6.0.jar
+  lib/poi-scratchpad-3.14.jar lib/commons-email-1.4.jar lib/javax.mail
+ -1.6.1.jar lib/activation-1.1.1.jar lib/core-3.3.0.jar lib/javase-3.3
+ .0.jar lib/jcommander-1.48.jar lib/jai-imageio-core-1.3.1.jar lib/Use
+ rAgentUtils-1.20.jar lib/httpclient-4.5.6.jar lib/httpcore-4.4.10.jar
+  lib/jsoup-1.9.1.jar lib/metadata-extractor-2.9.1.jar lib/xmpcore-5.1
+ .2.jar lib/thumbnailator-0.4.8.jar lib/blade-patchca-1.0.5.jar lib/an
+ t-1.9.7.jar lib/ant-launcher-1.9.7.jar lib/jmimemagic-0.1.3.jar lib/o
+ ro-2.0.8.jar lib/xmlParserAPIs-2.0.2.jar lib/pinyin4j-2.5.0.jar lib/j
+ cl-over-slf4j-1.7.25.jar lib/jul-to-slf4j-1.7.25.jar lib/log4j-over-s
+ lf4j-1.7.25.jar lib/logback-classic-1.2.3.jar lib/logback-core-1.2.3.
+ jar lib/jjwt-0.9.0.jar lib/hutool-all-4.1.0.jar .
+Build-Jdk: 1.8.0_144
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/sanysxt-root/sanysxt-zuul
+Created-By: Maven Integration for Eclipse
+Main-Class: com.sany.Application
+

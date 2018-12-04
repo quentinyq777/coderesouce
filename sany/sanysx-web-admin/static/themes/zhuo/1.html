@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>餐厅管理平台</title>
+	<link rel="stylesheet" type="text/css" href="css/com.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#restTab li").hover(function() {
+				$(this).addClass('current').siblings().removeClass('current');
+			});
+			$(".restOneList").hover(function() {
+				$("#restTipBox").removeClass('displayN');
+			}, function() {
+				$("#restTipBox").addClass('displayN');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="restaurantM mauto">
+		<div class="restMcon">
+			<div class="restMainMenu clearfix">
+				<dl class="fleft cursor">
+					<dt class="mauto"></dt>
+					<dd>新订单</dd>
+				</dl>
+				<dl class="fleft cursor">
+					<dt class="sec mauto"></dt>
+					<dd>进行预约</dd>
+				</dl>
+				<dl class="fleft cursor">
+					<dt class="thr mauto"></dt>
+					<dd>换桌</dd>
+				</dl>
+			</div>
+			<div class="restMainIn clearfix mauto">
+				<div class="restMainTab clearfix">
+					<ul class="clearfix" id="restTab">
+						<li class="fleft cursor current">全部</li>
+						<li class="fleft cursor">2人以下</li>
+						<li class="fleft cursor">3-4人</li>
+						<li class="fleft cursor">5-8人</li>
+						<li class="fleft cursor">8人以上</li>
+						<li class="fleft cursor">包间</li>
+					</ul>
+				</div>
+				<div class="restMainCon clearfix">
+					<div class="restMainOne clearfix">
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_03.png" alt="" />
+								</dt>
+								<dd>01桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor disabled">设置空闲</li>
+								<li class="cursor disabled">订单打印</li>
+								<li class="cursor disabled">打印菜单</li>
+								<li class="cursor disabled">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_05.png" alt="" />
+								</dt>
+								<dd>02桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor disabled">设置空闲</li>
+								<li class="cursor disabled">订单打印</li>
+								<li class="cursor disabled">打印菜单</li>
+								<li class="cursor disabled">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_07.png" alt="" />
+								</dt>
+								<dd>03桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor disabled">设置空闲</li>
+								<li class="cursor disabled">订单打印</li>
+								<li class="cursor disabled">打印菜单</li>
+								<li class="cursor disabled">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_09.png" alt="" />
+								</dt>
+								<dd>04桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor disabled">设置空闲</li>
+								<li class="cursor disabled">订单打印</li>
+								<li class="cursor disabled">打印菜单</li>
+								<li class="cursor disabled">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_15.png" alt="" />
+								</dt>
+								<dd>05桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_16.png" alt="" />
+								</dt>
+								<dd>06桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBgH">设置空闲</li>
+								<li class="cursor orderBgH">订单打印</li>
+								<li class="cursor menuBgH">打印菜单</li>
+								<li class="cursor accountBgH">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_17.png" alt="" />
+								</dt>
+								<dd>07桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_18.png" alt="" />
+								</dt>
+								<dd>08桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_23.png" alt="" />
+								</dt>
+								<dd>09桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_24.png" alt="" />
+								</dt>
+								<dd>10桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_25.png" alt="" />
+								</dt>
+								<dd>11桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_26.png" alt="" />
+								</dt>
+								<dd>12桌</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_31.png" alt="" />
+								</dt>
+								<dd>01包间</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_32.png" alt="" />
+								</dt>
+								<dd>02包间</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft selected">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									<img src="images/list_33.png" alt="" />
+								</dt>
+								<dd>03包间</dd>
+							</dl>
+							<ul>
+								<li class="cursor freeBg">设置空闲</li>
+								<li class="cursor orderBg">订单打印</li>
+								<li class="cursor menuBg">打印菜单</li>
+								<li class="cursor accountBg">客户结算</li>
+							</ul>							
+						</div>
+						<div class="restOneList fleft">
+							<div class="listBg"></div>
+							<dl>
+								<dt>
+									
+								</dt>
+								<dd>04包间</dd>
+							</dl>
+							<ul>
+								
+							</ul>							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 弹出层 -->
+			<div class="restTipBox displayN" id="restTipBox">
+				<div class="tipBoxBg"></div>
+				<ul class="clearfix">
+					<li>桌号：<span>03包厢</span></li>
+					<li>当前状态：<span>已结算</span></li>
+					<li>点菜数量：<span>8</span></li>
+					<li>消费金额：<span class="sColor">￥888.00</span></li>
+					<li>下单时间：<span>15:30</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
